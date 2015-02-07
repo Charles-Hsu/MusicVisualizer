@@ -13,6 +13,8 @@
 		C28263C71A839BC900E439D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28263C61A839BC900E439D9 /* Images.xcassets */; };
 		C28263CA1A839BC900E439D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C28263C81A839BC900E439D9 /* LaunchScreen.xib */; };
 		C28263D61A839BC900E439D9 /* MusicVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263D51A839BC900E439D9 /* MusicVisualizerTests.swift */; };
+		C28263E01A8501F100E439D9 /* DemoSong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C28263DF1A839C4D00E439D9 /* DemoSong.m4a */; };
+		C28263E21A85B8D600E439D9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C28263E11A85B8D600E439D9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 		C28263D41A839BC900E439D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28263D51A839BC900E439D9 /* MusicVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVisualizerTests.swift; sourceTree = "<group>"; };
 		C28263DF1A839C4D00E439D9 /* DemoSong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemoSong.m4a; sourceTree = "<group>"; };
+		C28263E11A85B8D600E439D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		C28263B11A839BC900E439D9 = {
 			isa = PBXGroup;
 			children = (
+				C28263E11A85B8D600E439D9 /* README.md */,
 				C28263BC1A839BC900E439D9 /* MusicVisualizer */,
 				C28263D21A839BC900E439D9 /* MusicVisualizerTests */,
 				C28263BB1A839BC900E439D9 /* Products */,
@@ -194,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28263E01A8501F100E439D9 /* DemoSong.m4a in Resources */,
 				C28263C51A839BC900E439D9 /* Main.storyboard in Resources */,
 				C28263CA1A839BC900E439D9 /* LaunchScreen.xib in Resources */,
 				C28263C71A839BC900E439D9 /* Images.xcassets in Resources */,
@@ -214,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C28263E21A85B8D600E439D9 /* README.md in Sources */,
 				C28263C21A839BC900E439D9 /* ViewController.swift in Sources */,
 				C28263C01A839BC900E439D9 /* AppDelegate.swift in Sources */,
 			);
@@ -343,6 +349,7 @@
 				INFOPLIST_FILE = MusicVisualizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,6 +360,7 @@
 				INFOPLIST_FILE = MusicVisualizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
