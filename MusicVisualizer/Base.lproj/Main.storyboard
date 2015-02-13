@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -9,33 +10,91 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicVisualizer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KVf-Uq-hhD"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tse-Wz-r6t"/>
+                        <viewControllerLayoutGuide type="top" id="cVC-fH-AlI"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Fa-Ab-2G9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="523" affinity="minY"/>
+                            <userLayoutGuide location="571" affinity="minX"/>
+                        </userGuides>
                         <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="118" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-t2-7iO" customClass="MPVolumeView">
+                                <rect key="frame" x="39" y="588" width="522" height="44"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="i1M-OQ-wFw">
+                                        <rect key="frame" x="-2" y="7" width="526" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="leading" secondItem="4pC-t2-7iO" secondAttribute="leading" id="CcW-L1-79s"/>
+                                    <constraint firstAttribute="height" constant="44" id="DTU-lZ-zyd"/>
+                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="centerY" secondItem="4pC-t2-7iO" secondAttribute="centerY" id="lg3-Jv-uJ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1M-OQ-wFw" secondAttribute="trailing" id="yf0-m9-GlL"/>
+                                </constraints>
+                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-3r-8Qs">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem systemItem="search" id="IJa-zr-79o"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LrG-FA-4cy"/>
+                                    <barButtonItem systemItem="play" id="a2p-Nh-QHp"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CMJ-NO-C3V"/>
+                                    <barButtonItem style="plain" systemItem="action" id="9Kn-M4-EtU" userLabel="Volume"/>
+                                </items>
                             </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62Z-QZ-aMW">
+                                <rect key="frame" x="0.0" y="8" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="wSI-8Q-6Rr"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hIK-3r-8Qs" secondAttribute="trailing" id="QZH-ol-Mf9"/>
-                            <constraint firstAttribute="bottom" secondItem="hIK-3r-8Qs" secondAttribute="bottom" id="bCT-B7-6bF"/>
-                            <constraint firstItem="hIK-3r-8Qs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u5Z-Uv-wmr"/>
+                            <constraint firstItem="62Z-QZ-aMW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9op-uY-8ip"/>
+                            <constraint firstAttribute="bottom" secondItem="hIK-3r-8Qs" secondAttribute="bottom" id="HaE-1E-Jry"/>
+                            <constraint firstItem="4pC-t2-7iO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="Ldl-SK-cTc"/>
+                            <constraint firstItem="62Z-QZ-aMW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="Scb-QS-xSC"/>
+                            <constraint firstAttribute="trailing" secondItem="62Z-QZ-aMW" secondAttribute="trailing" id="UOD-bt-Iid"/>
+                            <constraint firstItem="4pC-t2-7iO" firstAttribute="centerX" secondItem="hIK-3r-8Qs" secondAttribute="centerX" id="cW9-2n-FtD"/>
+                            <constraint firstItem="hIK-3r-8Qs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dSt-Dt-fxN"/>
+                            <constraint firstAttribute="trailing" secondItem="hIK-3r-8Qs" secondAttribute="trailing" id="f4y-sG-hI7"/>
+                            <constraint firstItem="hIK-3r-8Qs" firstAttribute="bottom" secondItem="4pC-t2-7iO" secondAttribute="bottom" constant="-32" id="ttt-RW-yud"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Bfh-6b-WvA" appends="YES" id="jQp-yE-hss"/>
+                            <outletCollection property="gestureRecognizers" destination="beq-vR-iOt" appends="YES" id="mVh-r0-WJl"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="mpVolumeView" destination="4pC-t2-7iO" id="kPz-T7-asq"/>
+                        <outlet property="slider" destination="i1M-OQ-wFw" id="ATv-rB-ue0"/>
+                        <outlet property="songTitle" destination="wSI-8Q-6Rr" id="ajn-Mr-pwN"/>
                         <outlet property="toolbar" destination="hIK-3r-8Qs" id="L1R-Nn-hn9"/>
+                        <outlet property="volumeIcon" destination="9Kn-M4-EtU" id="Btt-c0-hPG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="TIi-SU-iR1"/>
+                <tapGestureRecognizer id="Bfh-6b-WvA">
+                    <connections>
+                        <action selector="tapDetected:" destination="BYZ-38-t0r" id="q3b-GO-fbD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="beq-vR-iOt">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="WZM-9Y-GIC"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="319" y="430"/>
+            <point key="canvasLocation" x="-428" y="518"/>
         </scene>
     </scenes>
 </document>

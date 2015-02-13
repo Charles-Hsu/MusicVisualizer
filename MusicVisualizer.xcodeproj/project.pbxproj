@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22B3A061A8A1C4E0005BB32 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */; };
+		C22B3A361A8A3E940005BB32 /* English-Study-Abroad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */; };
 		C28263C01A839BC900E439D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263BF1A839BC900E439D9 /* AppDelegate.swift */; };
 		C28263C21A839BC900E439D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263C11A839BC900E439D9 /* ViewController.swift */; };
 		C28263C51A839BC900E439D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28263C31A839BC900E439D9 /* Main.storyboard */; };
@@ -14,7 +16,8 @@
 		C28263CA1A839BC900E439D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C28263C81A839BC900E439D9 /* LaunchScreen.xib */; };
 		C28263D61A839BC900E439D9 /* MusicVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263D51A839BC900E439D9 /* MusicVisualizerTests.swift */; };
 		C28263E01A8501F100E439D9 /* DemoSong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C28263DF1A839C4D00E439D9 /* DemoSong.m4a */; };
-		C28263E21A85B8D600E439D9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C28263E11A85B8D600E439D9 /* README.md */; };
+		C28264831A87597500E439D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28264821A87597500E439D9 /* String+Extensions.swift */; };
+		C28264971A8A137C00E439D9 /* VolumeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C28264961A8A137C00E439D9 /* VolumeIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "../UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "English-Study-Abroad.jpg"; path = "../English-Study-Abroad.jpg"; sourceTree = "<group>"; };
 		C28263BA1A839BC900E439D9 /* MusicVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28263BE1A839BC900E439D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28263BF1A839BC900E439D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		C28263D51A839BC900E439D9 /* MusicVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVisualizerTests.swift; sourceTree = "<group>"; };
 		C28263DF1A839C4D00E439D9 /* DemoSong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemoSong.m4a; sourceTree = "<group>"; };
 		C28263E11A85B8D600E439D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C28264821A87597500E439D9 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		C28264961A8A137C00E439D9 /* VolumeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VolumeIcon.png; path = ../VolumeIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,10 @@
 		C28263BC1A839BC900E439D9 /* MusicVisualizer */ = {
 			isa = PBXGroup;
 			children = (
+				C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */,
+				C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */,
+				C28264961A8A137C00E439D9 /* VolumeIcon.png */,
+				C28264821A87597500E439D9 /* String+Extensions.swift */,
 				C28263BF1A839BC900E439D9 /* AppDelegate.swift */,
 				C28263C11A839BC900E439D9 /* ViewController.swift */,
 				C28263C31A839BC900E439D9 /* Main.storyboard */,
@@ -199,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28263E01A8501F100E439D9 /* DemoSong.m4a in Resources */,
+				C28264971A8A137C00E439D9 /* VolumeIcon.png in Resources */,
 				C28263C51A839BC900E439D9 /* Main.storyboard in Resources */,
 				C28263CA1A839BC900E439D9 /* LaunchScreen.xib in Resources */,
 				C28263C71A839BC900E439D9 /* Images.xcassets in Resources */,
+				C22B3A361A8A3E940005BB32 /* English-Study-Abroad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28263E21A85B8D600E439D9 /* README.md in Sources */,
+				C28264831A87597500E439D9 /* String+Extensions.swift in Sources */,
 				C28263C21A839BC900E439D9 /* ViewController.swift in Sources */,
 				C28263C01A839BC900E439D9 /* AppDelegate.swift in Sources */,
+				C22B3A061A8A1C4E0005BB32 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +431,7 @@
 				C28263DB1A839BC900E439D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28263DC1A839BC900E439D9 /* Build configuration list for PBXNativeTarget "MusicVisualizerTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +440,7 @@
 				C28263DE1A839BC900E439D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
