@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MusicVisualizer/ViewController.swift"
-            timestampString = "445537321.332036"
+            timestampString = "445538311.22784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "508"
-            endingLineNumber = "508"
+            startingLineNumber = "427"
+            endingLineNumber = "427"
             landmarkName = "playURL(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MusicVisualizer/ViewController.swift"
-            timestampString = "445534344.888423"
+            timestampString = "445538311.22784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "configureBars()"
             landmarkType = "5">
          </BreakpointContent>

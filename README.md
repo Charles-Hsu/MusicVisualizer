@@ -96,6 +96,7 @@ for view in mpVolumeView.subviews {
   }
 }
 ```
+![](http://i.imgur.com/Eez23oS.jpg)
 
 # Reference
 
