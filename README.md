@@ -107,3 +107,6 @@ for view in mpVolumeView.subviews {
 - [A selection of algorithms that work with Strings](http://sketchytech.blogspot.tw/2014/08/swift-pure-swift-method-for-returning.html)
 - [The simplest way to resize an UIImage?](http://stackoverflow.com/questions/2658738/the-simplest-way-to-resize-an-uiimage)
 - [Detecting Pan Gesture End](http://stackoverflow.com/questions/6467638/detecting-pan-gesture-end)
+- [URL to MPMediaItem](http://stackoverflow.com/questions/9890500/url-to-mpmediaitem)
+-[SWIFT | Adding constraints programmatically](http://stackoverflow.com/questions/26180822/swift-adding-constraints-programmatically)
+- [Programmatically send to front/back elements created from interface builder](http://stackoverflow.com/questions/1054937/programmatically-send-to-front-back-elements-created-from-interface-builder)

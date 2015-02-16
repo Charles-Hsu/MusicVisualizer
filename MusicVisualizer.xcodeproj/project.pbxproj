@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C22B3A061A8A1C4E0005BB32 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */; };
 		C22B3A361A8A3E940005BB32 /* English-Study-Abroad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */; };
+		C23978CF1A8FA4290075F2E2 /* MPMediaItemProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23978CE1A8FA4290075F2E2 /* MPMediaItemProperty.swift */; };
+		C23978D11A8FA9060075F2E2 /* noArtworkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C23978D01A8FA9060075F2E2 /* noArtworkImage.png */; };
 		C28263C01A839BC900E439D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263BF1A839BC900E439D9 /* AppDelegate.swift */; };
 		C28263C21A839BC900E439D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28263C11A839BC900E439D9 /* ViewController.swift */; };
 		C28263C51A839BC900E439D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28263C31A839BC900E439D9 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "../UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "English-Study-Abroad.jpg"; path = "../English-Study-Abroad.jpg"; sourceTree = "<group>"; };
+		C23978CE1A8FA4290075F2E2 /* MPMediaItemProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPMediaItemProperty.swift; sourceTree = "<group>"; };
+		C23978D01A8FA9060075F2E2 /* noArtworkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noArtworkImage.png; sourceTree = "<group>"; };
 		C28263BA1A839BC900E439D9 /* MusicVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28263BE1A839BC900E439D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C28263BF1A839BC900E439D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +94,9 @@
 		C28263BC1A839BC900E439D9 /* MusicVisualizer */ = {
 			isa = PBXGroup;
 			children = (
+				C23978D01A8FA9060075F2E2 /* noArtworkImage.png */,
 				C22B3A351A8A3E940005BB32 /* English-Study-Abroad.jpg */,
+				C23978CE1A8FA4290075F2E2 /* MPMediaItemProperty.swift */,
 				C22B3A051A8A1C4E0005BB32 /* UIImage+Extensions.swift */,
 				C28264961A8A137C00E439D9 /* VolumeIcon.png */,
 				C28264821A87597500E439D9 /* String+Extensions.swift */,
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28263E01A8501F100E439D9 /* DemoSong.m4a in Resources */,
+				C23978D11A8FA9060075F2E2 /* noArtworkImage.png in Resources */,
 				C28264971A8A137C00E439D9 /* VolumeIcon.png in Resources */,
 				C28263C51A839BC900E439D9 /* Main.storyboard in Resources */,
 				C28263CA1A839BC900E439D9 /* LaunchScreen.xib in Resources */,
@@ -233,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28264831A87597500E439D9 /* String+Extensions.swift in Sources */,
+				C23978CF1A8FA4290075F2E2 /* MPMediaItemProperty.swift in Sources */,
 				C28263C21A839BC900E439D9 /* ViewController.swift in Sources */,
 				C28263C01A839BC900E439D9 /* AppDelegate.swift in Sources */,
 				C22B3A061A8A1C4E0005BB32 /* UIImage+Extensions.swift in Sources */,

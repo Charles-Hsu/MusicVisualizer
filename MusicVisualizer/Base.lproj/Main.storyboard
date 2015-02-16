@@ -16,26 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <userGuides>
-                            <userLayoutGuide location="523" affinity="minY"/>
-                            <userLayoutGuide location="571" affinity="minX"/>
-                        </userGuides>
                         <subviews>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="118" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-t2-7iO" customClass="MPVolumeView">
-                                <rect key="frame" x="39" y="588" width="522" height="44"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="i1M-OQ-wFw">
-                                        <rect key="frame" x="-2" y="7" width="526" height="31"/>
-                                    </slider>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="leading" secondItem="4pC-t2-7iO" secondAttribute="leading" id="CcW-L1-79s"/>
-                                    <constraint firstAttribute="height" constant="44" id="DTU-lZ-zyd"/>
-                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="centerY" secondItem="4pC-t2-7iO" secondAttribute="centerY" id="lg3-Jv-uJ0"/>
-                                    <constraint firstAttribute="trailing" secondItem="i1M-OQ-wFw" secondAttribute="trailing" id="yf0-m9-GlL"/>
-                                </constraints>
-                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-3r-8Qs">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,25 +28,49 @@
                                     <barButtonItem style="plain" systemItem="action" id="9Kn-M4-EtU" userLabel="Volume"/>
                                 </items>
                             </toolbar>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="118" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-t2-7iO" customClass="MPVolumeView">
+                                <rect key="frame" x="16" y="566" width="568" height="44"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="i1M-OQ-wFw">
+                                        <rect key="frame" x="-2" y="7" width="572" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="leading" secondItem="4pC-t2-7iO" secondAttribute="leading" id="CcW-L1-79s"/>
+                                    <constraint firstAttribute="height" constant="44" id="DTU-lZ-zyd"/>
+                                    <constraint firstItem="i1M-OQ-wFw" firstAttribute="centerY" secondItem="4pC-t2-7iO" secondAttribute="centerY" id="lg3-Jv-uJ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1M-OQ-wFw" secondAttribute="trailing" id="yf0-m9-GlL"/>
+                                </constraints>
+                            </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62Z-QZ-aMW">
                                 <rect key="frame" x="0.0" y="8" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="wSI-8Q-6Rr"/>
                                 </items>
                             </navigationBar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UfV-gn-rXQ">
+                                <rect key="frame" x="14" y="62" width="572" height="31"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T58-op-8uy">
+                                <rect key="frame" x="65" y="148" width="231" height="251"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="UfV-gn-rXQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="28R-y3-UTJ"/>
+                            <constraint firstItem="UfV-gn-rXQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Kx-od-zny"/>
                             <constraint firstItem="62Z-QZ-aMW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9op-uY-8ip"/>
                             <constraint firstAttribute="bottom" secondItem="hIK-3r-8Qs" secondAttribute="bottom" id="HaE-1E-Jry"/>
-                            <constraint firstItem="4pC-t2-7iO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="Ldl-SK-cTc"/>
+                            <constraint firstItem="4pC-t2-7iO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ldl-SK-cTc"/>
                             <constraint firstItem="62Z-QZ-aMW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="Scb-QS-xSC"/>
                             <constraint firstAttribute="trailing" secondItem="62Z-QZ-aMW" secondAttribute="trailing" id="UOD-bt-Iid"/>
                             <constraint firstItem="4pC-t2-7iO" firstAttribute="centerX" secondItem="hIK-3r-8Qs" secondAttribute="centerX" id="cW9-2n-FtD"/>
                             <constraint firstItem="hIK-3r-8Qs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dSt-Dt-fxN"/>
                             <constraint firstAttribute="trailing" secondItem="hIK-3r-8Qs" secondAttribute="trailing" id="f4y-sG-hI7"/>
-                            <constraint firstItem="hIK-3r-8Qs" firstAttribute="bottom" secondItem="4pC-t2-7iO" secondAttribute="bottom" constant="-32" id="ttt-RW-yud"/>
+                            <constraint firstItem="UfV-gn-rXQ" firstAttribute="top" secondItem="62Z-QZ-aMW" secondAttribute="bottom" constant="10" id="tA9-BW-B5m"/>
+                            <constraint firstItem="hIK-3r-8Qs" firstAttribute="bottom" secondItem="4pC-t2-7iO" secondAttribute="bottom" constant="-10" id="ttt-RW-yud"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Bfh-6b-WvA" appends="YES" id="jQp-yE-hss"/>
@@ -94,7 +99,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-428" y="518"/>
+            <point key="canvasLocation" x="-1550" y="580"/>
         </scene>
     </scenes>
 </document>
